@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html itemscope itemtype='http://schema.org/WebPage' prefix='og: http://ogp.me/ns#'>
+  <head>
+    <link rel="canonical" content="https://pfkf.de/" />
+    <meta name="author" content="Jens Krämer" />
+    <meta property="og:title" content="Home of the Pfannkuchenfraggers" />
+    <meta property="og:url" content="https://pfkf.de/" />
+    <meta property="og:site_name" content="pfkf.de" />
+    <meta property="og:type" content="website" />
+
+    <%= stylesheet_link_tag "site" %>
+    <link rel="stylesheet" media="screen" href="/assets/pfkf-a3de0d4870d197aba29da652315b6b189cb859a1e84857c56a80bcc3f5e4f92f.css" />
+    <title>[pfkf] - Home of the Pfannkuchenfraggers</title>
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+      <div id="wrapper2">
+        <div id="header">
+          <%= image_tag "logo.gif", alt: "online pro-laming since 2001 and the most sexiest clan ever ;-)" %>
+        </div>
+
+        <%= yield %>
+
+        <div id="sidebar">
+          <ul>
+            <li class="active"><a href="/">News</a></li>
+            <li><a href="#">Members</a></li>
+
+            <li><a href="#">Matches</a></li>
+            <li><a href="#">Screenhots</a></li>
+            <li><a href="#">Links</a></li>
+            <li><a href="#">Downloads</a></li>
+            <li><a href="#">Boards</a><ul><li><a href="#">[pfkf]</a></li></ul></li>
+          </ul>
+        </div>
+
+        <div id="footer">
+          <p>&nbsp;</p>
+        </div>
+
+      </div>
+    </div>
+
+
+  </body>
+</html>
+
+
