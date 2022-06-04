@@ -1,0 +1,326 @@
+@charset "UTF-8";
+body {
+  color: #FFF;
+  background: #000;
+  font-family: sans-serif;
+  font-size: medium;
+  padding: 0;
+  margin: 0; }
+
+/* wrapper fuer Hintergrundbild rechts */
+#wrapper {
+  float: left;
+  width: 100%;
+  min-width: 750px;
+  background: #000 url("/images/bg_right.png") repeat-y 100% 0; }
+
+/* wrapper fuer Hintergrundbild links */
+#wrapper2 {
+  float: left;
+  width: 100%;
+  background: url("/images/bg_left.png") repeat-y 0 0; }
+
+#header {
+  text-align: center;
+  height: 100px;
+  padding-top: 10px;
+  background: url("/images/bg_left_top.png") no-repeat 0 0; }
+
+#content {
+  float: right;
+  width: 75%; }
+
+#sidebar {
+  float: left;
+  width: 25%;
+  background: url("/images/bg_navi.png") repeat-x 0 100%; }
+
+/* IE */
+* html #sidebar {
+  background: url("/images/bg_navi_ie.png") no-repeat 0 100%; }
+
+/* Footer */
+#footer {
+  clear: both;
+  font-size: 80%; }
+
+#poweredby {
+  float: right;
+  margin: 2em 2em 1em 0; }
+
+/* generals */
+h2, h3, legend {
+  font-family: serif;
+  font-weight: normal;
+  color: #da2200; }
+
+#innercontent h3 a {
+  color: #da2200;
+  text-decoration: none; }
+
+h2 {
+  margin: 0;
+  font-size: 120%; }
+
+h3 {
+  margin: 1.5em 0 0.2em 0;
+  font-size: 100%; }
+
+img {
+  border: none; }
+
+/** Formulare */
+#content form {
+  margin: 1em 0; }
+
+fieldset {
+  clear: left;
+  border: none;
+  margin: 5px 0 0 0;
+  padding: 0; }
+
+legend {
+  margin: 0.5em 0 0 0; }
+
+label, p.buttons {
+  margin: 5px 0 0 0; }
+
+label {
+  display: block;
+  font-size: 80%; }
+
+fieldset input, textarea {
+  font-family: monospace;
+  width: 25em; }
+
+textarea {
+  height: 12.5em; }
+
+.buttons input {
+  margin: 0.5em 1em 0 0; }
+
+.buttons a {
+  font-size: 80%;
+  font-weight: bold;
+  margin-left: 1em; }
+
+p.error em {
+  font-size: 80%;
+  color: red;
+  display: block; }
+
+p.file input {
+  width: 15em; }
+
+p.checkbox label {
+  display: inline; }
+
+p.checkbox input {
+  width: 1.25em;
+  height: 1.25em;
+  margin: 0 .5em 0 0; }
+
+/* Linke Spalte */
+#sidebar ul, #sidebar form {
+  margin: 2em 1em 0 15%; }
+
+#sidebar h4 {
+  font-size: 120%;
+  font-weight: normal; }
+
+#sidebar ul {
+  padding: 0;
+  list-style: none; }
+
+#sidebar ul ul {
+  font-size: 80%;
+  margin: 0.5em 0 0 1em; }
+
+#sidebar ul li {
+  margin: 0.3em 0;
+  padding: 0; }
+
+#sidebar ul li a {
+  color: #FFF;
+  text-decoration: none; }
+
+#sidebar ul li.active, #sidebar ul li.active a {
+  color: #1e90ff; }
+
+#sidebar ul li.active ul a {
+  color: #FFF; }
+
+#sidebar ul ul li.active a {
+  color: #1e90ff; }
+
+#sidebar fieldset input {
+  width: 120px;
+  margin-bottom: 5px; }
+
+/* Inhaltsbereich */
+#innercontent {
+  margin: 0 40px 0 0;
+  color: #eee; }
+
+#innercontent ul {
+  list-style: none;
+  margin: 0 2em 0 0;
+  padding: 0; }
+
+#innercontent a {
+  color: #eee; }
+
+#innercontent a:hover {
+  color: #da2200; }
+
+.paging {
+  text-align: center;
+  font-size: 80%;
+  margin: 1em 8em 0 0;
+  clear: both; }
+
+.paging a {
+  color: #fff; }
+
+p.meta {
+  font-size: 80%;
+  margin: 0 0 1em 0.5em;
+  padding: 2px 0 0 1em;
+  background: url("/images/bracket.gif") no-repeat; }
+
+table {
+  width: 100%; }
+
+thead {
+  text-align: left; }
+
+tbody {
+  font-size: 80%; }
+
+/* Subnavi */
+#innercontent ul.subnav {
+  margin: .25em 0 1em 0;
+  padding: 0;
+  list-style: none;
+  float: left; }
+
+ul.subnav li {
+  float: left;
+  margin: 0 1em 0 0; }
+
+#actions {
+  clear: left;
+  margin: 0.5em 0; }
+
+#actions a {
+  font-size: 80%;
+  font-weight: bold; }
+
+div#messages {
+  font-size: 80%;
+  float: right;
+  width: 15em; }
+
+p#notice {
+  color: green; }
+
+p#error {
+  color: red; }
+
+a.admin {
+  display: none;
+  float: right;
+  font-size: 80%;
+  text-decoration: none;
+  border: 1px solid #999;
+  padding: .25em;
+  margin: 0 .25em; }
+
+li:hover a.admin, div.screenshot:hover a.admin {
+  display: block;
+  color: #999 !important; }
+
+/* News */
+/* Wars */
+.num {
+  text-align: center; }
+
+td.won {
+  color: lightgreen; }
+
+td.lost {
+  color: red; }
+
+td.sum {
+  font-weight: bold; }
+
+/* Members */
+table.users {
+  max-width: 50em; }
+
+dt {
+  font-size: 80%;
+  font-weight: bold;
+  margin-top: 1em; }
+
+/* Forum */
+/* Weiter:
+ * threads wegrationalisieren ?
+ * weiß mit rounded corners und drop shadow für 
+ * jeweils ersten Beitrag, luftig abgesetzt voneinander, 5 pro Seite
+ * antworten dann auf forum/entry/xyz
+ * dafür noch 'ne Suche rein ;-)
+ */
+ul.forum li, ul.forumlist li {
+  margin: 1em 0 0 0;
+  padding: 0.2em 0 0 0; }
+
+ul.forum a {
+  text-decoration: none;
+  font-size: 80%;
+  font-weight: bold;
+  color: #aaa; }
+
+#innercontent ul.replies {
+  list-style: none;
+  margin: 0 0 0 2em;
+  padding: 0; }
+
+ul.forumlist li a {
+  color: #da2200;
+  text-decoration: none;
+  font-weight: bold; }
+
+ul.forumlist li p {
+  margin: 0.5em 0 0 0; }
+
+/* Links */
+#links p {
+  text-align: center;
+  width: 400px; }
+
+#links img {
+  margin: 1em; }
+
+/* Screenshots */
+div.shots {
+  clear: left; }
+
+div.screenshot {
+  float: left;
+  width: 280px;
+  margin: 1em 1em 0 1em; }
+
+div.screenshot p {
+  margin-top: .25em; }
+
+/* Downloads */
+ul.downloads {
+  clear: left;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+ul.downloads li p {
+  margin-bottom: .25em;
+  margin-top: .25em; }
